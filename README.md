@@ -1,302 +1,176 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <title>تعليم صيانة الكمبيوتر - داود الشريحي</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body {
-            margin: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: #f5f5f5;
-            color: #222;
-        }
-        header {
-            background: #0f172a;
-            color: #fff;
-            padding: 15px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        header .brand {
-            font-size: 20px;
-            font-weight: 700;
-        }
-        nav {
-            margin-top: 10px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            font-size: 14px;
-        }
-        nav a {
-            color: #e5e7eb;
-            text-decoration: none;
-            padding: 6px 10px;
-            border-radius: 999px;
-            border: 1px solid #1f2937;
-        }
-        nav a:hover {
-            background: #1f2937;
-        }
-        .hero {
-            padding: 40px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: #fff;
-        }
-        .hero h1 {
-            margin: 0 0 15px;
-            font-size: 26px;
-        }
-        .hero p {
-            margin: 0 0 20px;
-            line-height: 1.7;
-        }
-        .hero .btn-primary {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #22c55e;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 999px;
-            font-weight: 600;
-        }
-        .hero .btn-primary:hover {
-            background: #16a34a;
-        }
-        .section {
-            padding: 30px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .section h2 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 22px;
-            color: #0f172a;
-        }
-        .grid {
-            display: grid;
-            gap: 15px;
-        }
-        @media (min-width: 768px) {
-            .grid-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-            .grid-3 {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-        }
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
-        }
-        .card h3 {
-            margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 18px;
-            color: #111827;
-        }
-        .card ul {
-            margin: 0;
-            padding-right: 18px;
-            font-size: 14px;
-            line-height: 1.8;
-        }
-        .card ul li {
-            margin-bottom: 4px;
-        }
-        .contact-box {
-            background: #0f172a;
-            color: #e5e7eb;
-            border-radius: 12px;
-            padding: 20px;
-        }
-        .contact-box p {
-            margin: 6px 0;
-        }
-        .contact-label {
-            font-weight: 600;
-            color: #a5b4fc;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 13px;
-            color: #6b7280;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تعليم صيانة الكمبيوتر - داود الشريجي</title>
+
+<style>
+/* ====== إعدادات عامة ====== */
+body {
+    margin: 0;
+    font-family: "Tajawal", sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+/* ====== الهيدر ====== */
+header {
+    background: linear-gradient(90deg, #0f172a, #1e3a8a);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* ====== القائمة ====== */
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    background: #1e40af;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background: #1e3a8a;
+}
+
+/* ====== قسم البطل ====== */
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #1e3a8a, #3b82f6);
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* ====== قسم المحتوى ====== */
+.section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* ====== زر واتساب ====== */
+.whatsapp {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background: #25D366;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: 0.2s;
+}
+
+.whatsapp:hover {
+    background: #1faa52;
+}
+
+/* ====== الفوتر ====== */
+footer {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <div class="brand">تعليم صيانة الكمبيوتر - داود الشريحي</div>
+    <h1>تعليم صيانة الكمبيوتر - داود الشريجي</h1>
     <nav>
-        <a href="#home">الرئيسية</a>
-        <a href="#lessons">الدروس</a>
-        <a href="#articles">المقالات</a>
-        <a href="#about">عن المعلّم</a>
-        <a href="#contact">اتصل بنا</a>
+        <a href="#about">عن الموقع</a>
+        <a href="#courses">الدروس</a>
+        <a href="#services">الخدمات</a>
+        <a href="#contact">تواصل</a>
     </nav>
 </header>
 
-<section class="hero" id="home">
-    <h1>تعليم صيانة الكمبيوتر من الصفر حتى الاحتراف</h1>
-    <p>
-        تعلّم خطوة بخطوة كيفية تشخيص الأعطال، إصلاح الأجهزة، التعامل مع أنظمة التشغيل،
-        وتسريع أداء الكمبيوتر واللابتوب بأسلوب عملي وواضح.
-    </p>
-    <a href="#lessons" class="btn-primary">ابدأ التعلم الآن</a>
+<section class="hero">
+    <h2>تعلم صيانة الكمبيوتر بسهولة</h2>
+    <p>شروحات مبسطة – خطوات واضحة – خبرة عملية</p>
 </section>
 
-<section class="section" id="lessons">
-    <h2>دروس صيانة الكمبيوتر</h2>
-    <div class="grid grid-2">
-        <div class="card">
-            <h3>تشخيص الأعطال</h3>
-            <ul>
-                <li>معرفة سبب المشكلة من الأعراض</li>
-                <li>فحص الحرارة ومراقبة المراوح</li>
-                <li>فحص الرامات والأخطاء الشائعة</li>
-                <li>فحص الهارد والتأكد من سلامته</li>
-                <li>فحص الباور ومشاكل التشغيل</li>
-                <li>قراءة رسائل الخطأ وتحليلها</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>صيانة الهاردوير</h3>
-            <ul>
-                <li>تنظيف الجهاز من الداخل والخارج</li>
-                <li>تغيير المعجون الحراري للمعالج</li>
-                <li>تركيب وتغيير الرامات</li>
-                <li>استبدال الهارد وترقيته إلى SSD</li>
-                <li>صيانة المراوح وتنظيفها</li>
-                <li>أساسيات صيانة اللابتوب</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>صيانة السوفتوير</h3>
-            <ul>
-                <li>إصلاح مشاكل الإقلاع</li>
-                <li>حل مشكلة الشاشة الزرقاء</li>
-                <li>إصلاح تعريفات الأجهزة</li>
-                <li>إزالة الفيروسات والبرامج الضارة</li>
-                <li>تسريع النظام وتحسين الأداء</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>الفورمات والويندوز</h3>
-            <ul>
-                <li>تجهيز USB إقلاع للويندوز</li>
-                <li>الدخول إلى BIOS/UEFI وضبط الإقلاع</li>
-                <li>تثبيت ويندوز خطوة بخطوة</li>
-                <li>تثبيت التعريفات الأساسية</li>
-                <li>البرامج الضرورية بعد الفورمات</li>
-            </ul>
-        </div>
-        <div class="card">
-            <h3>أدوات الصيانة</h3>
-            <ul>
-                <li>أفضل أدوات الفك والتركيب</li>
-                <li>برامج فحص الهارد والرامات</li>
-                <li>برامج مراقبة الحرارة</li>
-                <li>برامج الحماية الموثوقة</li>
-                <li>أدوات النسخ الاحتياطي والاستعادة</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="articles">
-    <h2>مقالات ونصائح</h2>
-    <div class="grid grid-3">
-        <div class="card">
-            <h3>أفضل 10 برامج لصيانة الكمبيوتر</h3>
-            <p style="font-size:14px; line-height:1.8;">
-                مجموعة من البرامج المجانية والاحترافية لفحص الجهاز، تنظيف الملفات المؤقتة،
-                مراقبة الحرارة، وحل المشاكل الشائعة.
-            </p>
-        </div>
-        <div class="card">
-            <h3>كيف تحمي جهازك من الفيروسات</h3>
-            <p style="font-size:14px; line-height:1.8;">
-                نصائح عملية لاختيار برنامج حماية مناسب، وتجنّب الروابط والملفات المشبوهة،
-                وأهمية التحديثات الدورية.
-            </p>
-        </div>
-        <div class="card">
-            <h3>لماذا يصبح الكمبيوتر بطيئًا؟</h3>
-            <p style="font-size:14px; line-height:1.8;">
-                أهم الأسباب التي تؤدي لبطء الجهاز، من الهارد والرامات إلى البرامج الثقيلة،
-                وكيفية معالجة كل سبب.
-            </p>
-        </div>
-        <div class="card">
-            <h3>الفرق بين SSD و HDD</h3>
-            <p style="font-size:14px; line-height:1.8;">
-                مقارنة بين الأقراص التقليدية والـ SSD من حيث السرعة، العمر، والاستخدام الأنسب
-                لكل نوع.
-            </p>
-        </div>
-        <div class="card">
-            <h3>نصائح لإطالة عمر اللابتوب</h3>
-            <p style="font-size:14px; line-height:1.8;">
-                كيفية التعامل الصحيح مع البطارية، التهوية، الشحن، والتنظيف للحفاظ على أداء
-                اللابتوب لأطول فترة ممكنة.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="section" id="about">
-    <h2>عن المعلّم</h2>
+<section id="about" class="section">
+    <h3>عن الموقع</h3>
     <div class="card">
-        <p style="line-height:1.9; font-size:15px;">
-            أنا داود الشريحي، فني محترف في صيانة الكمبيوتر والأنظمة. أقدّم خبرتي في هذا الموقع
-            لتعليم صيانة الكمبيوتر بشكل مبسّط وواضح، يناسب المبتدئين ومن يريد تطوير نفسه
-            في مجال الصيانة.
-        </p>
-        <p style="line-height:1.9; font-size:15px;">
-            أمتلك خبرة عملية في تشخيص الأعطال، إصلاح الأجهزة المكتبية واللابتوبات، التعامل
-            مع أنظمة التشغيل، وضبط الإعدادات المتقدمة مثل BIOS، بالإضافة إلى تنظيم خطوات
-            العمل بشكل منهجي وواضح.
-        </p>
-        <p style="line-height:1.9; font-size:15px;">
-            هدفي أن أساعدك على فهم الصيانة بثقة، وأن تكون قادرًا على حل المشاكل بنفسك
-            خطوة بخطوة.
-        </p>
+        هذا الموقع مخصص لتعليم أساسيات صيانة الكمبيوتر بطريقة سهلة وواضحة، مع التركيز على الجانب العملي.
     </div>
 </section>
 
-<section class="section" id="contact">
-    <h2>اتصل بنا</h2>
-    <div class="contact-box">
-        <p>
-            يسعدني تواصلك في أي وقت للاستفسارات أو طلب المساعدة في صيانة الكمبيوتر
-            أو الدروس التعليمية.
-        </p>
-        <p>
-            <span class="contact-label">📱 واتساب / جوال:</span>
-            ٠٥٧١٤٩٩٥٥٤
-        </p>
-        <p>
-            <span class="contact-label">📧 البريد الإلكتروني:</span>
-            Dawoodrrr20@gmail.com
-        </p>
-        <p>
-            <span class="contact-label">📍 الموقع:</span>
-            الدمام – المملكة العربية السعودية
-        </p>
-    </div>
+<section id="courses" class="section">
+    <h3>الدروس</h3>
+
+    <div class="card">🔧 كيفية فتح الجهاز وتنظيفه</div>
+    <div class="card">💾 تثبيت ويندوز خطوة بخطوة</div>
+    <div class="card">⚙️ حل مشاكل الإقلاع والـ BIOS</div>
+    <div class="card">🧹 تسريع الجهاز وتحسين الأداء</div>
 </section>
+
+<section id="services" class="section">
+    <h3>الخدمات</h3>
+
+    <div class="card">✔️ صيانة أجهزة الكمبيوتر</div>
+    <div class="card">✔️ تنسيق وتركيب أنظمة</div>
+    <div class="card">✔️ استشارات تقنية</div>
+</section>
+
+<a id="contact" class="whatsapp" href="https://wa.me/966000000000" target="_blank">
+    تواصل عبر واتساب
+</a>
 
 <footer>
-    © جميع الحقوق محفوظة لـ داود الشريحي – تعليم صيانة الكمبيوتر
+    © 2026 داود الشريجي – جميع الحقوق محفوظة
 </footer>
 
 </body>
