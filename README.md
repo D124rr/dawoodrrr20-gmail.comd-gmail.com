@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تعليم صيانة الكمبيوتر - داود الشريجي</title>
+<title>تعليم صيانة الكمبيوتر - داود الشريحي</title>
 
 <style>
 /* ====== إعدادات عامة ====== */
@@ -127,7 +127,7 @@ footer {
 <body>
 
 <header>
-    <h1>تعليم صيانة الكمبيوتر - داود الشريجي</h1>
+    <h1>تعليم صيانة الكمبيوتر - داود الشريحي</h1>
     <nav>
         <a href="#about">عن الموقع</a>
         <a href="#courses">الدروس</a>
@@ -165,12 +165,12 @@ footer {
     <div class="card">✔️ استشارات تقنية</div>
 </section>
 
-<a id="contact" class="whatsapp" href="https://wa.me/966000000000" target="_blank">
+<a id="contact" class="whatsapp" href="https://wa.me/966571499554" target="_blank">
     تواصل عبر واتساب
 </a>
 
 <footer>
-    © 2026 داود الشريجي – جميع الحقوق محفوظة
+    © 2026 داود الشريحي – جميع الحقوق محفوظة
 </footer>
 
 </body>
